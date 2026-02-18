@@ -1,45 +1,72 @@
-Sales & Orders Dashboard 📊
-End-to-end sales data analysis project built during Umschulung Fachinformatiker: Daten- und Prozessanalyse training
+# Sales & Orders Dashboard 📊
 
-🎯 Project Overview
-Analyzed a sales dataset containing thousands of transactions from multiple stores. Cleaned raw data, calculated key business KPIs, and created professional visualizations to identify trends, top performers, and growth opportunities.
+End-to-end sales data analysis project built during **Umschulung Fachinformatiker: Daten- und Prozessanalyse** training.
 
-Simulates real junior data analyst workflow for e-commerce/retail companies.
+---
 
-🛠️ Tech Stack
-Python: pandas (data cleaning, transformations, KPI calculations)
+## 🎯 Project Overview
+This project analyzes a large sales dataset containing thousands of transactions from multiple stores.  
+The workflow includes data cleaning, KPI calculation, and professional visualizations to uncover trends, top performers, and growth opportunities.
 
-Visualization: matplotlib (professional charts & graphs)
+It simulates a real **junior data analyst workflow** for e-commerce and retail companies.
 
-Data: CSV sales transactions generated with Claude.ai assistance
+---
 
+## 🛠️ Tech Stack
+- **Python** – Data analysis and processing  
+- **pandas** – Data cleaning, transformations, KPI calculations  
+- **matplotlib** – Professional charts & visualizations  
+- **Data Source** – CSV sales transactions (synthetically generated with AI assistance)
 
-📈 Key Business KPIs Calculated
+---
 
-Total Revenue:	€20045147.82
+## 📈 Key Business KPIs
+- **Total Revenue:** €20,045,147.82  
+- **Total Orders:** 1,809  
+- **Average Order Value:** €11,080.79  
+- **Top Category by Revenue:** Coffee Mug (€1,279,587.55)
 
-Total Orders:	1809
+---
 
-Average Order Value:	€11080.79
+## 💡 Business Insights
+- **Top 5 Products** generate **28.8%** of total revenue (Pareto principle in action)
+- **Monthly Revenue Trends** reveal ~3.9% growth/decline patterns
+- **Customer Analysis:** Top 5 customers contribute **2.6%** of total revenue
+- **Category Performance:** Beverages dominate with **21.3%** market share
 
-Top Category Revenue:	Coffee Mug: €1279587.55
+---
 
+## 🔍 Analysis Performed
+### 🧹 Data Cleaning
+- Removed duplicate records  
+- Handled missing values  
+- Standardized data formats  
 
-💡 Business Insights Generated
+### 📊 KPI Calculations
+- Total Revenue  
+- Average Order Value (AOV)  
+- Category performance metrics  
 
-Top 5 Products generate 28.8% of total revenue (Pareto principle in action)
+### 👥 Customer Segmentation
+- Identified top customers by revenue contribution  
+- Ranked customer value distribution  
 
-Monthly Revenue Trends show 3.9% growth/decline patterns
+### ⏳ Time Series Analysis
+- Monthly revenue trend analysis  
+- Growth and seasonality patterns  
 
-Customer Analysis: Top 5 customers contribute 2.6% of revenue
+### 📱 Visual Dashboard
+- Professional charts for business stakeholders  
+- Revenue trends visualization  
+- Product & category performance graphs  
 
-Category Performance: Beverages dominates with 21.3% market share
+---
 
+## 🚀 Project Goal
+To demonstrate practical skills in:
+- Data cleaning & processing  
+- Business KPI analysis  
+- Data visualization  
+- Real-world retail data interpretation  
 
-📱 Visualizations
-🔍 Analysis Performed
-1. Data Cleaning: Removed duplicates, handled missing values
-2. KPI Calculations: Total revenue, avg order value, category performance
-3. Customer Segmentation: Top customers by revenue contribution
-4. Time Series: Monthly revenue trends
-5. Visual Dashboard: Professional charts for business stakeholders
+Designed as a portfolio project showcasing job-ready skills for **Junior Data Analyst / Data & Process Analysis** roles.
