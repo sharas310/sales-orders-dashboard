@@ -58,8 +58,23 @@ It simulates a real **junior data analyst workflow** for e-commerce and retail c
 ### 📱 Visual Dashboard
 - Professional charts for business stakeholders  
 - Revenue trends visualization  
-- Product & category performance graphs  
+- Product & category performance graphs
 
+---
+
+## 🚀 Future Improvements
+
+- Interactive dashboard (Tableau / Power BI)
+- Automated data pipeline
+- SQL database integration
+
+---
+
+## 👨‍💻 Author
+
+**Sarunas R.**  
+Aspiring Data Analyst | Data & Process Analysis (IHK Umschulung)  
+📍 Germany  
 ---
 
 ## 🚀 Project Goal
