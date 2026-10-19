@@ -1,0 +1,6 @@
+segment,customers,avg_orders,avg_recency_days,revenue_eur,share_pct
+Champions,245,4.52,36.0,13801146.07,45.3
+"High value, at risk",181,3.22,154.0,8439971.51,27.7
+"Low value, inactive",285,1.87,188.0,3765056.15,12.4
+"Recent, low value",181,2.55,37.0,2945176.02,9.7
+"High value, recent",39,2.0,46.0,1521361.93,5.0

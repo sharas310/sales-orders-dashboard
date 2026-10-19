@@ -1,0 +1,42 @@
+// DAX measures for the Sales & Orders report.
+// Create them in Power BI Desktop: select the fact_sales table → New measure → paste one block at a time.
+
+Revenue = SUM ( fact_sales[revenue] )
+
+Orders = COUNTROWS ( fact_sales )
+
+Avg Order Value = DIVIDE ( [Revenue], [Orders] )
+
+Known Customers =
+CALCULATE (
+    DISTINCTCOUNT ( fact_sales[customer_id] ),
+    fact_sales[customer_id] <> "Unknown"
+)
+
+Avg Discount % = AVERAGE ( fact_sales[discount_percent] )
+
+// Revenue the first version of the project would have shown (complete rows only)
+Revenue v1 (complete rows) =
+CALCULATE (
+    [Revenue],
+    fact_sales[numeric_complete] = 1,
+    ISBLANK ( fact_sales[recovered] ) || fact_sales[recovered] = ""
+)
+
+Revenue hidden by dropna % = DIVIDE ( [Revenue] - [Revenue v1 (complete rows)], [Revenue] )
+
+// Time intelligence (needs dim_date marked as date table, see powerbi/README.md)
+Revenue PM = CALCULATE ( [Revenue], DATEADD ( dim_date[date], -1, MONTH ) )
+
+Revenue MoM % = DIVIDE ( [Revenue] - [Revenue PM], [Revenue PM] )
+
+Revenue YTD = TOTALYTD ( [Revenue], dim_date[date] )
+
+// Share of the current filter context in the total, e.g. per product or store
+Revenue Share % = DIVIDE ( [Revenue], CALCULATE ( [Revenue], ALL ( dim_product ), ALL ( dim_store ) ) )
+
+Product Rank =
+RANKX ( ALL ( dim_product[product_name] ), [Revenue], , DESC, DENSE )
+
+Recovered Rows =
+CALCULATE ( [Orders], NOT ISBLANK ( fact_sales[recovered] ) && fact_sales[recovered] <> "" )
